@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/node22/tsconfig",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "noImplicitAny": false,
+    "lib": [
+      "ES2016",
+      "dom"
+  ],
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts", "src/examples", "src/benchmark"]
+
+}
